@@ -5,13 +5,13 @@ const Hero = () => {
     <section className="hero">
       <div className="content">
         <div className="title">
-          <h1>LET'S</h1>
-          <h1>GET</h1>
-          <h1>MOVING</h1>
+           <h1>Push</h1>
+           <h1>Limits,</h1>
+           <h1>Break</h1>
+           <h1>Barriers</h1>
         </div>
         <div className="sub-title">
-          <p>Your Journey to Fitness Starts Here</p>
-          <p>Unleash Your Potential</p>
+          <p>Elevate Your Fitness Game</p>
         </div>
         <div className="buttons">
           <button>Start Your Journey</button>

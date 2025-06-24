@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Dumbbell, Clock, UserCheck, Lock, PauseCircle, Check } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,26 +6,26 @@ const Pricing = () => {
   const pricing = [
     {
       imgUrl: "/pricing.jpg",
-      title: "QUARTERLY",
+      title: "Strength Starter Plan",
       price: 9000,
       length: 3,
     },
     {
       imgUrl: "/pricing.jpg",
-      title: "HEAL_YEARLY",
+      title: "Transformation Package",
       price: 16000,
       length: 6,
     },
     {
       imgUrl: "/pricing.jpg",
-      title: "YEARLY",
+      title: "Elite Performance Plan",
       price: 30000,
       length: 12,
     },
   ];
   return (
     <section className="pricing">
-      <h1>ELITE EDGE FITNESS PLANS</h1>
+      <h1>IronCore Strength Plans</h1>
       <div className="wrapper">
         {pricing.map((element) => {
           return (
@@ -39,19 +39,19 @@ const Pricing = () => {
               </div>
               <div className="description">
                 <p>
-                  <Check /> Equipment
+                  <Dumbbell /> 	State-of-the-Art Gym Gear
                 </p>
                 <p>
-                  <Check /> All Day Fre Training
+                  <Clock /> Unlimited Access to Training Zones
                 </p>
                 <p>
-                  <Check /> Free Restroom
+                  <Lock /> Clean & Hygienic Changing Facilities
                 </p>
                 <p>
-                  <Check /> 24/7 Skilled Support
+                  <UserCheck /> Round-the-Clock Certified Trainer Assistance
                 </p>
                 <p>
-                  <Check /> 20 Days Freezing Option
+                  <PauseCircle /> 20-Day Membership Pause Flexibility
                 </p>
                 <Link to={"/"}>Join Now</Link>
               </div>

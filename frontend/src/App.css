@@ -10,20 +10,25 @@
 
 header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-  font-size: 1.6rem;
-  border: 2px solid whitesmoke;
+  font-size: 4.0rem;
+  font-weight: 600;
   padding: 8px 12px;
-  margin-top: 45px;
-  margin-left: 7rem;
+  font-family: "Exo 2", sans-serif;
+  color: #ff0000;
 }
 header p {
   font-family: "Exo 2", sans-serif;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-  color: whitesmoke;
+  font-size: 4.0rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: wheat;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero {
@@ -45,7 +50,8 @@ header p {
 }
 .hero .content .title {
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  font-style: italic;
 }
 .hero .content .sub-title p {
   font-weight: 400;
@@ -54,7 +60,7 @@ header p {
   line-height: 45px;
 }
 .hero .content .sub-title p:last-child {
-  color: #0095ff;
+  color: wheat;
 }
 .hero .content .buttons {
   display: flex;
@@ -64,15 +70,16 @@ header p {
 .hero .content .buttons button {
   padding: 15px 30px;
   font-size: 1.2rem;
-  color: #0095ff;
-  border: 1px solid #0095ff;
-  background: transparent;
+  color: #000000;
+  border: 1px solid wheat;
+  border-radius: 30px;
+  background-color: white;
   transition: 0.3s;
 }
 .hero .content .buttons button:hover {
   cursor: pointer;
-  background: #0095ff;
-  color: whitesmoke;
+  background:wheat;
+  color: black;
   transition: 0.3s;
 }
 @media (max-width: 1050px) {
@@ -134,6 +141,7 @@ header p {
   min-height: 100vh;
   display: flex;
   max-width: 1500px;
+  background-color: rgb(0, 0, 0);
   margin: 0 auto;
   padding: 100px 0 50px 0;
   gap: 75px;
@@ -146,7 +154,7 @@ header p {
 }
 .workout_session .wrapper h1 {
   font-size: 2.2rem;
-  color: #111;
+  color: wheat;
 }
 .workout_session .wrapper p {
   font-size: 1.4rem;
@@ -171,8 +179,11 @@ header p {
   background: #111;
   transition: 0.3s;
 }
+.workout_session .wrapper .bootcamps div{
+  color: wheat;
+}
 .workout_session .wrapper .bootcamps div:hover h4 {
-  color: #0095ff;
+  color: rgb(144, 79, 173);
   transition: 0.3s;
 }
 .workout_session .wrapper .bootcamps div:hover p {
@@ -212,8 +223,9 @@ header p {
   padding: 100px 0 50px 0;
 }
 .gallery h1 {
-  color: #0095ff;
+  color: wheat;
   font-size: 2.2rem;
+  font-style: italic;
   margin: 0 auto;
   letter-spacing: 1px;
 }
@@ -249,22 +261,27 @@ header p {
 .pricing {
   display: flex;
   gap: 30px;
+  background-color: #000000;
   flex-direction: column;
   padding: 100px 0 50px 0;
 }
 .pricing h1 {
   font-size: 2.2rem;
+  font-style: italic;
+  color: wheat;
   margin: 0 auto;
   letter-spacing: 1px;
 }
 .pricing .wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  max-width: 1500px;
-  min-width: 1500px;
-  margin: 0 auto;
   padding: 30px 0;
+  max-width: 1200px;
+  margin: auto;
 }
+
 .pricing .wrapper .card {
   flex: 1;
   position: relative;
@@ -284,13 +301,13 @@ header p {
   z-index: 1;
   position: relative;
   height: 250px;
-  color: #fff;
+  color:white;
   overflow-y: hidden;
   padding: 30px;
 }
 .pricing .wrapper .card .title h1 {
-  font-size: 3rem;
-  color: #0095ff;
+  font-size: 2rem;
+  color: wheat;
   position: relative;
   z-index: 5;
 }
@@ -343,22 +360,25 @@ header p {
   font-size: 15px;
 }
 .pricing .wrapper .card .description p svg {
-  color: #0095ff;
+  color: rgb(144, 79, 173);
 }
 .pricing .wrapper .card .description a {
   background: transparent;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   background: #0095ff;
+  background-color: white;
   padding: 15px 30px;
   border: none;
+  border-radius: 30px;
   text-decoration: none;
   width: fit-content;
   transition: 0.3s;
 }
 .pricing .wrapper .card .description a:hover {
   transition: 0.3s;
-  background: #0267af;
+  background: wheat;
+  color: black;
 }
 .pricing .wrapper .card:nth-child(2):before {
   content: "";
@@ -455,7 +475,7 @@ header p {
 
 .contact {
   min-height: 800px;
-  background: url(/contact.jpg) rgba(0, 0, 0, 0.75);
+  background: url(/contact.jpg) rgb(144, 79, 173);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +486,7 @@ header p {
   padding-right: 7rem;
 }
 .contact form {
-  background: whitesmoke;
+  background: black;
   width: 650px;
   padding: 40px;
   display: flex;
@@ -474,6 +494,14 @@ header p {
   gap: 40px;
   font-size: 20px;
 }
+.contact h1 {
+  color: wheat; 
+}
+
+.contact label {
+  color: wheat; 
+}
+
 .contact form div {
   display: flex;
   flex-direction: column;
@@ -486,7 +514,7 @@ header p {
   font-size: 20px;
   padding: 7px 3px;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid wheat;
   background: transparent;
 }
 .contact form div input:focus {
@@ -494,15 +522,19 @@ header p {
 }
 .contact form button {
   border: none;
-  color: whitesmoke;
-  background: #0095ff;
+  color: wheat;
+  background: black;
+  border: 2px solid wheat;
+  border-radius: 30px;
+  border-color: wheat;
   padding: 10px;
   font-size: 20px;
   transition: 0.3s;
 }
 .contact form button:hover {
   transition: 0.3s;
-  background: #0267af;
+  background: wheat;
+  color: #000000;
   cursor: pointer;
 }
 @media (max-width: 1160px) {
@@ -517,7 +549,8 @@ footer {
   background: #111;
   text-align: center;
   font-size: 20px;
-  color: #0095ff;
+  font-style: italic;
+  color: wheat;
 }
 
 .bmi {
@@ -526,21 +559,22 @@ footer {
   align-items: center;
   gap: 30px;
   padding: 100px 0 50px 0;
-  background: linear-gradient(45deg, #0a2b42, #60698b);
+  background-color: rgb(0, 0, 0);
 }
 .bmi h1 {
   font-size: 2.2rem;
   margin: 0 auto;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: whitesmoke;
+  font-style: italic;
+  color: wheat;
 }
 .bmi .container {
   display: flex;
   gap: 50px;
   min-width: 1500px;
   max-width: 1500px;
-  color: whitesmoke;
+  color:wheat;
 }
 .bmi .container .wrapper {
   flex: 1;
@@ -573,10 +607,10 @@ footer {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
-  color: antiquewhite;
+  color: wheat;
 }
 .bmi .container .wrapper form div option {
-  color: #111;
+  color: black;
 }
 .bmi .container .wrapper form div input:focus,
 .bmi .container .wrapper form div select:focus {
@@ -587,7 +621,7 @@ footer {
   padding: 10px 40px;
   font-size: 22px;
   font-weight: 500;
-  color: #0095ff;
+  color : black;
   background: #fff;
 }
 @media (max-width: 1520px) {
